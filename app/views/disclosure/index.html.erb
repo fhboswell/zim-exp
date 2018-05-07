@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Visual</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <%= render 'shared/navigation' %>
+
+    <div id="main-container" class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <% flash.each do |name, msg| -%>
+            <%= content_tag :div, msg, class: "alert alert-#{name}" %>
+          <% end -%>
+        </div>
+      </div>
+
+        <div class="row">
+        <div class="col-xs-2 ">
+        </div>
+        <div class="col-xs-8 align-items-center">
+         
+		  <h3>Implied Consent to Participate in Research</h3>
+
+<br> The purpose of this research is to understand the relationship between writing styles and personality. The researcher, Henry Boswell, is a researcher at San Francisco State University and is conducting research in the Psychology department. 
+
+<h3>This is a pilot study. </h3>
+<br> The results of this study will not be shared or disseminated for publication or made available to others outside the organization associated with the research.<br>
+
+<br> Compensation for participating in this research will be $   . The survey should take approximately minutes to complete. <br>
+
+<br> PARTICIPATION IN THIS RESEARCH IS VOLUNTARY. You may choose to participate or not. If you do not wish to participate, you may simply log out with no penalty to yourself. If you do participate, your participation in the survey indicates your consent to the above conditions. <br>
+         
+
+        </div>
+    </div>
+
+
+     
+        
+          <%= yield %>
+       
+    
+    </div>
+<%= render 'shared/footer' %>
+  </body>
+
+  <style>
+/* You could choose to override all browser styles on all your inputs, but I prefer explicit classes */
+body {
+  background: #fff;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #444;
+}
+
+
+/* GET RID OF LABELS */
+
+.value label {
+  display: none;
+}
+
+
+/* STYLE LABEL TD  */
+
+td.label {
+  font-weight: 700;
+  padding-right: 1em;
+}
+
+
+/* STYLE VALUE RADIO TD */
+
+.value::before {
+  /* content: 'Colour'; */
+  display: block;
+  float: left;
+  margin: 10px 15px 0 0;
+}
+
+
+/* RADIO */
+
+.value input[type="radio"] {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+
+}
+
+
+/* HIDE THE FIRST RADIO GENERATED FROM SELECT OPTIONS */
+
+.value input[type="radio"]:first-child {
+  display: none;
+}
+
+
+/* TOP COLOR BLOCK */
+
+input[type="radio"]:before {
+
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #dddddd;
+  z-index: 2;
+}
+
+
+/* BG COLOR BLOCK */
+
+input[type="radio"]:after {
+  border: 1px solid #dddddd;
+  background: #fff;
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
+
+/* HOVER */
+
+input[type="radio"]:hover:after {
+  /* border-color: #000; */
+  background: black;
+}
+
+
+/* CHECKED STATES */
+
+.value input[type="radio"]:checked:after {
+  //border: 1px solid #000;
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  background: red;
+}
+
+.value input[type="radio"]:checked:hover:after {
+  background: black;
+}
+
+
+/* COLORED ATTRIBUTES */
+
+.value input[type="radio"][value="black"]:before {
+  
+}
+
+.value input[type="radio"][value="white"]:before {
+ background: white;
+}
+
+.value input[type="radio"][value="red"]:before {
+  background: red;
+}
+
+
+h3{
+  text-align: center;
+}
+
+
+.align-items-center{
+
+border: 1px solid black;
+text-align: center;
+
+}
+.textcolor{
+  color: black;
+
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  padding-top: 50px;
+  text-align: center;
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  
+}
+</style>
+</html>

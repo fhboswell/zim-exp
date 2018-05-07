@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'disclosure/index'
+
   get 'welcome/index'
   root 'welcome#index'
 
