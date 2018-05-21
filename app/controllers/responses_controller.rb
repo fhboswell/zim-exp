@@ -19,8 +19,9 @@ class ResponsesController < ApplicationController
         flash[:success] = 'Response sucessfully recorded.'
       	redirect_to done_index_url
     else
-        render :index
+        
         flash[:danger] = 'There was a problem. Please fill out all fields.'
+        render :index
         
   
    end
