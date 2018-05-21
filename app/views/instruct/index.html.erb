@@ -1,0 +1,53 @@
+
+
+
+
+
+<%= form_with url: instruct_test_url do |form| %>
+
+
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Object</th>
+      <th scope="col"><%= render 'object1' %></th>
+      <th scope="col"><%= render 'object2' %></th>
+      <th scope="col"><%= render 'object1' %> and <%= render 'object2' %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Bucket</th>
+      <td><%= form.text_field :r1, id: :response_r1, size: "6x12"%></td></td>
+      <td><%= form.text_field :r2, id: :response_r2, size: "6x12"%></td></td>
+      <td><%= form.text_field :r3, id: :response_r3, size: "6x12"%></td>
+    </tr>
+     </tbody>
+</table>
+
+
+<style>
+.actions {
+  padding-top: 50px;
+  text-align: center;
+  
+
+  
+}
+
+
+</style>
+  <div class="actions">
+    <%= form.submit "Submit", class: "btn btn-success" %>
+  </div>
+<% end %>
+
+   
+ 
+<style>
+.footer {
+   position:absolute;
+    /* Height of the footer */
+   
+}
+</style>

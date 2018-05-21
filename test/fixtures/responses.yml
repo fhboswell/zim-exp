@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  r1x1: MyText
+  r1x2: MyText
+  r1x3: MyText
+  r2x1: MyText
+  r2x2: MyText
+  r2x3: MyText
+  r3x1: MyText
+  r3x2: MyText
+  r3x3: MyText
+
+two:
+  r1x1: MyText
+  r1x2: MyText
+  r1x3: MyText
+  r2x1: MyText
+  r2x2: MyText
+  r2x3: MyText
+  r3x1: MyText
+  r3x2: MyText
+  r3x3: MyText

@@ -1,0 +1,21 @@
+current directory: /Users/henryboswell/Desktop/Experiments/zim-exp/vendor/cache/ruby/2.3.0/gems/puma-3.11.4/ext/puma_http11
+/Users/henryboswell/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20180520-38400-l7z6gh.rb extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+creating Makefile
+
+current directory: /Users/henryboswell/Desktop/Experiments/zim-exp/vendor/cache/ruby/2.3.0/gems/puma-3.11.4/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: /Users/henryboswell/Desktop/Experiments/zim-exp/vendor/cache/ruby/2.3.0/gems/puma-3.11.4/ext/puma_http11
+make "DESTDIR="
+compiling io_buffer.c
+compiling mini_ssl.c
+compiling puma_http11.c
+compiling http11_parser.c
+linking shared-object puma/puma_http11.bundle
+
+current directory: /Users/henryboswell/Desktop/Experiments/zim-exp/vendor/cache/ruby/2.3.0/gems/puma-3.11.4/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20180520-38400-a4yl6l/puma

@@ -1,0 +1,61 @@
+<div class="row">
+        <div class="col-xs-2 ">
+        </div>
+        <div class="col-xs-8 align-items-center">
+          <h3>Evaulating Objects</h3>
+          <ul>
+          	
+  			<li>In the table below you will find the names of some objects.</li>
+  			<li> Please select the grade to which you consider each object to be.
+        <li> the catagories are as follows: <%= render 'object1' %>, a <%= render 'object2' %>, or a <%= render 'object1' %>  <%= render 'object2' %></li>
+        <li>Please, give a number between 0% and 100%.</li>
+        <li>0% means: The object in question is NOT <%= render 'object1' %>, a <%= render 'object2' %>, or <%= render 'object1' %> and <%= render 'object2' %></li>
+        <li>100% means: The object in question is 100% <%= render 'object1' %>, a <%= render 'object2' %>, or  <%= render 'object1' %> and <%= render 'object2' %></li>
+        	
+		  </ul>
+         
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<style>
+
+h3{
+  text-align: center;
+}
+body {
+ 
+  text-align: left;
+}
+.row {
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  
+  
+}
+
+.align-items-center{
+
+border: 1px solid black;
+
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  padding-top: 50px;
+  text-align: center;
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  
+}
+</style>
